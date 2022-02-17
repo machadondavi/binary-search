@@ -20,9 +20,9 @@ const binarySearch = (listNum, n) => {
         if(listNum[guess] == n) {
             return true;
         } else if(listNum[guess] < n) {
-            min = chute + 1;
+            min = guess + 1;
         } else if(listNum[guess] > n) {
-            max = chute - 1
+            max = guess - 1
         }
     }
     return false;
