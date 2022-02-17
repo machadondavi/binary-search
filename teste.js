@@ -8,10 +8,10 @@ const calculateAverage = (n1, n2) => {
 const binarySearch = (listNum, n) => {
     let min = 0;
     let max = listNum.length - 1;
-    let guess = calcularMedia(min, max);
+    let guess = calculateAverage(min, max);
 
     while (guess) {
-        guess = calcularMedia(min, max);
+        guess = calculateAverage(min, max);
 
         if(max < min) {
             return false;
